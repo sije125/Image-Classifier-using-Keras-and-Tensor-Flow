@@ -1,0 +1,81 @@
+MNIST Digit Classification with TensorFlow
+This project uses TensorFlow and Keras to build a Convolutional Neural Network (CNN) for classifying handwritten digits from the MNIST dataset. The model is trained and evaluated to predict digits from 0 to 9.
+
+Table of Contents
+Installation
+Usage
+Model Architecture
+Results
+Dependencies
+Installation
+To run this project, ensure you have Python 3.10 or a compatible version installed on your machine. You also need to install the necessary dependencies.
+
+Clone this repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/mnist-cnn.git
+cd mnist-cnn
+Install dependencies: It's recommended to use a virtual environment to isolate project dependencies. You can create and activate a virtual environment using the following commands:
+
+bash
+Copy
+Edit
+python -m venv venv  # Create a virtual environment
+venv\Scripts\activate  # Activate the virtual environment (Windows)
+# or
+source venv/bin/activate  # For Mac/Linux
+After activating the virtual environment, install the required packages:
+
+bash
+Copy
+Edit
+pip install numpy tensorflow matplotlib
+Usage
+Run the script to train the model:
+
+bash
+Copy
+Edit
+python mnist_cnn.py
+The model will:
+
+Load the MNIST dataset.
+Preprocess the data (normalize and reshape).
+Build and compile a CNN model.
+Train the model for 5 epochs.
+Evaluate the model on the test dataset.
+Output the test accuracy.
+Show a prediction on the first test image.
+After training, you will see the test accuracy printed in the terminal, and an image of the first test digit will be displayed with its predicted label.
+
+Model Architecture
+The model consists of the following layers:
+
+Convolutional Layers:
+
+Conv2D with 32 filters, kernel size of (3,3), and ReLU activation.
+MaxPooling2D with pool size (2,2).
+Conv2D with 64 filters and ReLU activation.
+MaxPooling2D with pool size (2,2).
+Conv2D with 64 filters and ReLU activation.
+Fully Connected Layers:
+
+Flatten layer to convert the 3D output into 1D.
+Dense layer with 64 units and ReLU activation.
+Dense layer with 10 units (one for each digit) and softmax activation for multi-class classification.
+Results
+After training the model for 5 epochs, the test accuracy is displayed in the terminal.
+An image of the first test image from the MNIST dataset is shown, with the predicted label as the title.
+Dependencies
+Python 3.10 (or higher)
+NumPy: For numerical computations and array handling.
+TensorFlow: For building and training the deep learning model.
+Matplotlib: For displaying the test image and its predicted label.
+Install dependencies using:
+
+bash
+Copy
+Edit
+pip install numpy tensorflow matplotlib
