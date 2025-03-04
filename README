@@ -19,25 +19,16 @@ git clone https://github.com/yourusername/mnist-cnn.git
 cd mnist-cnn
 Install dependencies: It's recommended to use a virtual environment to isolate project dependencies. You can create and activate a virtual environment using the following commands:
 
-bash
-Copy
-Edit
 python -m venv venv  # Create a virtual environment
 venv\Scripts\activate  # Activate the virtual environment (Windows)
 # or
 source venv/bin/activate  # For Mac/Linux
 After activating the virtual environment, install the required packages:
 
-bash
-Copy
-Edit
 pip install numpy tensorflow matplotlib
 Usage
 Run the script to train the model:
 
-bash
-Copy
-Edit
 python mnist_cnn.py
 The model will:
 
@@ -75,7 +66,4 @@ TensorFlow: For building and training the deep learning model.
 Matplotlib: For displaying the test image and its predicted label.
 Install dependencies using:
 
-bash
-Copy
-Edit
 pip install numpy tensorflow matplotlib
